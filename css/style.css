@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    border-bottom: 3px solid black;
+}
+
+body {
+    background-image: url("../img/pexels-joaojesusdesign-925743.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.navbar a {
+    color: rgb(72, 240, 5);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    color: wheat;
+    text-align: center;
+}
+
+.hero section {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.profile-img {
+    width: 480px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: rgb(9, 28, 45);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    color: rgb(1, 22, 22);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skill-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill-list li {
+    background-color: #eee;
+    padding: 12px 15px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: rgb(255, 253, 253);
+    border: none;
+    cursor: pointer;
+}
+
+aside {
+    position: sticky;
+    right: 20px;
+    top: 100px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 8px;
+}

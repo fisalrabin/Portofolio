@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Web Dev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <h1>Portofolio Mohammad Fisal Rabin</h1>
+</header>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#">Resume</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section class="hero" id="home">
+            <img src="img/Rabin.jpeg" alt="Mohammad Fisal Rabin" class="profile-img">
+
+            <div>
+                <h2>Tentang Saya</h2>
+                <p>Saya lulusan Fisika FMIPA Universitas Riau dengan pengalaman mengelola aktivitas laboratorium secara profesional. Terampil dalam manajemen alat, pengawasan bahan, dan penerapan standar keselamatan di laboratorium. Memiliki kemampuan kepemimpinan, komunikasi, serta semangat belajar tinggi untuk berkontribusi di lingkungan kerja laboratorium</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skill</h2>
+            <ul class="skill-list">
+                <li>HTML Dasar</li>
+                <li>Good Laboratory Practice</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="kontak">Kontak</h2>
+            <form>
+                <label for="nama">Nama</label><br>
+                <input id="nama" type="text"><br><br>
+
+                <label for="email">Email</label><br>
+                <input id="email" type="email"><br><br>
+
+                <label>Phone</label><br>
+                <input type="tel"><br><br>
+
+                <label>Pesan</label><br>
+                <textarea rows="5"></textarea><br><br>
+
+                <button type="button" onclick="kirimPesan()">Kirim</button>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h3>Linked</h3>
+        <a href="https://www.linkedin.com/in/mohammad-fisal-rabin-543361140" target="_blank">
+            Linkedin Saya
+        </a>
+    </aside>
+<script src="js/script.js" defer></script>
+</body>
+</html>
