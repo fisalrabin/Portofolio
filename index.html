@@ -17,55 +17,77 @@
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#">Project</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#email">Kontak</a></li>
+        <li><a href="CV_Mohammad Fisal Rabin.pdf" target="_blank" rel="noopener">Resume</a></li>
     </ul>
 </nav>
 
-    <main>
+    <main class="container">
         <section class="hero" id="home">
-            <img src="img/Rabin.jpeg" alt="Mohammad Fisal Rabin" class="profile-img">
+            <div class="hero-text">
+                <h1>Mohammad Fisal Rabin</h1>
+                <p>Physics Graduate | Trainee Web Developer</p>
 
-            <div>
-                <h2>Tentang Saya</h2>
-                <p>Saya lulusan Fisika FMIPA Universitas Riau dengan pengalaman mengelola aktivitas laboratorium secara profesional. Terampil dalam manajemen alat, pengawasan bahan, dan penerapan standar keselamatan di laboratorium. Memiliki kemampuan kepemimpinan, komunikasi, serta semangat belajar tinggi untuk berkontribusi di lingkungan kerja laboratorium</p>
+                <a href="https://www.linkedin.com/in/mohammad-fisal-rabin-543361140"
+                    target="_blank" class="btn-primary">Contact Me</a>
+            </div>
+
+             <img src="img/Rabin.jpeg" alt="Mohammad Fisal Rabin" class="profile-img">
+        </section>
+
+        <section class="about">
+            <h2>Tentang Saya</h2>
+
+            <div class="about-content">
+                <p>
+                    Saya lulusan Fisika FMIPA Universitas Riau dengan pengalaman
+                    mengelola aktivitas laboratorium secara profesional. Terampil
+                    dalam manajemen alat, pengawasan bahan, dan penerapan standar
+                    keselamatan di laboratorium. Memiliki kemampuan kepemimpinan,
+                    komunikasi, serta semangat belajar tinggi untuk berkontribusi
+                    di lingkungan kerja laboratorium.
+                </p>
+
+                <ul class="about-list">
+                    <li>🎓 Lulusan Fisika FMIPA Universitas Riau</li>
+                    <li>🧪 Pengalaman Laboratorium & GLP</li>
+                    <li>💻 Belajar Web Development</li>
+                    <li>📈 Cepat beradaptasi & belajar</li>
+                </ul>
             </div>
         </section>
 
-        <section>
+        <section class="skills">
             <h2>Skill</h2>
-            <ul class="skill-list">
-                <li>HTML Dasar</li>
-                <li>Good Laboratory Practice</li>
-                <li>Python</li>
-            </ul>
+
+            <div class="skill-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Good Laboratory Practice</div>
+            </div>
         </section>
 
+
         <section>
-            <h2 id="kontak">Kontak</h2>
-            <form>
+            <h2 id="email">Kontak</h2>
+            <form onsubmit="kirimPesan(); return false;">
                 <label for="nama">Nama</label><br>
                 <input id="nama" type="text"><br><br>
 
                 <label for="email">Email</label><br>
                 <input id="email" type="email"><br><br>
 
-                <label>Phone</label><br>
-                <input type="tel"><br><br>
+                <label for="phone">Phone</label><br>
+                <input id="phone" type="tel"><br><br>
 
                 <label>Pesan</label><br>
                 <textarea rows="5"></textarea><br><br>
 
-                <button type="button" onclick="kirimPesan()">Kirim</button>
+                <button type="submit">Kirim</button>
             </form>
         </section>
     </main>
-    <aside>
-        <h3>Linked</h3>
-        <a href="https://www.linkedin.com/in/mohammad-fisal-rabin-543361140" target="_blank">
-            Linkedin Saya
-        </a>
-    </aside>
 <script src="js/script.js" defer></script>
 </body>
 </html>

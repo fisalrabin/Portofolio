@@ -8,6 +8,7 @@ header {
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-image: url("../img/pexels-joaojesusdesign-925743.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -31,7 +32,7 @@ body {
 }
 
 .navbar a {
-    color: rgb(72, 240, 5);
+    color: rgb(7, 22, 2);
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     font-weight: bold;
@@ -43,9 +44,9 @@ body {
 }
 
 main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 section {
@@ -57,13 +58,36 @@ section {
 
 .hero {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
     align-items: center;
+    padding: 80px 0;
+    gap: 60px;
+}
 
-    height: 100vh;
-    color: wheat;
-    text-align: center;
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 1.2 rem;
+    color: #222;
+}
+
+.btn-primary {
+   display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #1e40af;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; 
 }
 
 .hero section {
@@ -72,11 +96,62 @@ section {
 }
 
 .profile-img {
-    width: 480px;
+    width: 280px;
     max-width: 100%;
     border-radius: 50%;
-    margin-bottom: 15px;
+    object-fit: cover;
 }
+
+.about {
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.about p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #334155;
+}
+
+.about {
+    background: rgba(255,255,255,0.85);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    margin-bottom: 24px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 32px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    background: #f1f5f9;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
 
 h1 {
     color: rgb(9, 28, 45);
@@ -121,11 +196,19 @@ button {
     cursor: pointer;
 }
 
-aside {
-    position: sticky;
-    right: 20px;
-    top: 100px;
-    background-color: rgba(255,255,255,0.8);
-    padding: 10px;
-    border-radius: 8px;
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 32px; /* TAMBAH INI */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
 }
