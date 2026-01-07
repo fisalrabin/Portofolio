@@ -168,18 +168,35 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.skill-list {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+.skills {
+    margin: 60px 0;
 }
 
-.skill-list li {
-    background-color: #eee;
-    padding: 12px 15px;
-    border-radius: 5px;
-    list-style: none;
+.skills h2 {
+    margin-bottom: 24px;
 }
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 24px 16px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
 
 form input,
 form textarea {
