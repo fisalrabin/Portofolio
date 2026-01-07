@@ -57,16 +57,22 @@ section {
 }
 
 .hero {
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 12px;
-    align-items: center;
     padding: 80px 0;
-    gap: 60px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
 }
 
 .hero-text {
     max-width: 550px;
+}
+
+.hero-image {
+    flex-shrink: 0;
 }
 
 .hero-text h1 {
@@ -76,7 +82,7 @@ section {
 }
 
 .hero-text p {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     color: #222;
 }
 
@@ -100,6 +106,7 @@ section {
     max-width: 100%;
     border-radius: 16px;
     object-fit: cover;
+    display: block;
 }
 
 .about {
@@ -220,12 +227,17 @@ button {
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
     }
-}
-@media (max-width: 768px) {
-    .about-content {
-        grid-template-columns: 1fr;
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .profile-img {
+        width: 220px;
+        margin-bottom: 24px;
     }
 }
